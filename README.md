@@ -38,3 +38,11 @@ all sorts of shades as a result of compression artifacts. PNG or GIF should be f
 If the source is GIF, you should be able to convert that to a PNG without losing anything, using
 just about anything. Even the built in Preview for macOS should work. Then make sure to grab the
 palette numbers, as such a conversion is bound to modify the exact color values.
+
+The hi-res image format output is in Hi-Eddy format. 
+
+9002 bytes total
+
+2 byte load header: $00 $20 (little endian for $2000).
+8000 bytes of bitmap data (set bit uses foreground color, unset uses background color)
+1000 bytes of color data (upper 4 bits foreground color, lower 4 bits background color)
