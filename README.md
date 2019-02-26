@@ -43,6 +43,6 @@ The hi-res image format output is in Hi-Eddy format.
 
 9002 bytes total
 
-2 byte load header: $00 $20 (little endian for $2000).
-8000 bytes of bitmap data (set bit uses foreground color, unset uses background color)
-1000 bytes of color data (upper 4 bits foreground color, lower 4 bits background color)
+* 2 byte load header: $00 $20 (little endian for $2000).
+* 8000 bytes of bitmap data (set bit uses foreground color, unset uses background color)
+* 1000 bytes of color data (upper 4 bits foreground color, lower 4 bits background color)
